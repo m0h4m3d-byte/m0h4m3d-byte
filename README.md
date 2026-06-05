@@ -2,13 +2,13 @@
 
 ## About Me
 
-I'm an aspiring software developer from Alexandria, Egypt 🇪🇬
+I'm an aspiring Software Developer from Alexandria, Egypt 🇪🇬 with a background in Industrial Electronics, Robotics, and Technical Support.
 
-Currently focused on building strong computer science fundamentals through Harvard's CS50 and expanding my web development skills through IBM SkillsBuild.
+After years of hands-on technical work, I decided to transition into software development, combining my problem-solving mindset with a passion for technology and continuous learning.
 
-My journey into programming is part of a career transition driven by curiosity, continuous learning, and a passion for technology.
+Currently, I'm strengthening my Computer Science fundamentals through Harvard's CS50 while expanding my Web Development skills through IBM SkillsBuild.
 
-I enjoy solving problems, building projects, exploring new technologies, and turning ideas into working applications.
+I enjoy building projects, exploring cybersecurity concepts, improving development workflows, and transforming ideas into practical solutions.
 
 ---
 
@@ -18,13 +18,14 @@ I enjoy solving problems, building projects, exploring new technologies, and tur
 * IBM SkillsBuild – Web Development Fundamentals
 * Python Programming
 * Web Development
+* SQL & Databases
 * Git & GitHub
 
 ---
 
 ## Technical Skills
 
-### Programming Languages
+### Programming
 
 * Python
 * C
@@ -35,10 +36,10 @@ I enjoy solving problems, building projects, exploring new technologies, and tur
 
 * HTML5
 * CSS3
-* Responsive Design
+* Responsive Web Design
 * GitHub Pages
 
-### Tools
+### Development Tools
 
 * Git
 * GitHub
@@ -46,36 +47,37 @@ I enjoy solving problems, building projects, exploring new technologies, and tur
 * CS50.dev
 * Obsidian
 
-### Other Skills
+### Other Technical Skills
 
 * Problem Solving
 * Debugging
 * Technical Research
 * AI-Assisted Development
+* Basic Cybersecurity Concepts
 
 ---
 
 ## Featured Projects
 
-### Personal Portfolio Website
+### 🌐 Personal Portfolio Website
 
-A responsive portfolio website showcasing my projects and learning journey.
+Responsive portfolio website showcasing my learning journey, projects, and technical growth.
 
-### E-Commerce Website
+### 🛒 E-Commerce Website
 
-A simple e-commerce project focused on front-end development and user experience.
+Front-end e-commerce project focused on responsive layouts and user experience.
 
-### Real Estate Web Application
+### 🏠 Real Estate Web Application
 
-A property listing platform prototype with responsive layouts and organized content presentation.
+Property listing platform prototype with organized content presentation and modern UI concepts.
 
-### World Clock Application (Python)
+### 🕒 World Clock Application (Python)
 
-A Python project displaying multiple international time zones.
+Python-based application displaying multiple international time zones.
 
-### CS50 Projects
+### 🎓 CS50 Projects Collection
 
-Programming assignments and problem-solving projects covering algorithms, data structures, file handling, debugging, and software fundamentals.
+Programming assignments covering algorithms, data structures, file handling, debugging, memory management, and software fundamentals.
 
 ---
 
@@ -86,7 +88,7 @@ Programming assignments and problem-solving projects covering algorithms, data s
 * Digital Marketing Nanodegree – Udacity
 * ICDL Certification
 * English Communication Skills – Edraak & British Council
-* LinkedIn Learning Courses
+* LinkedIn Learning Professional Courses
 
 ---
 
@@ -97,26 +99,29 @@ Programming assignments and problem-solving projects covering algorithms, data s
 
 ---
 
+## Current Focus
+
+* Completing Harvard CS50
+* Advancing Web Development Skills
+* Building Real-World Projects
+* Strengthening Software Engineering Fundamentals
+* Exploring Cybersecurity and Secure Development Practices
+
+---
+
 ## Connect With Me
 
-🌐 Portfolio: https://m0h4m3d-byte.github.io/
+🌐 Portfolio
+https://m0h4m3d-byte.github.io/
 
-💼 LinkedIn: https://www.linkedin.com/in/muhammad-g-shaheen/
+💼 LinkedIn
+https://www.linkedin.com/in/muhammad-g-shaheen/
 
-📧 Email: [dev3mohamed@gmail.com](mailto:dev3mohamed@gmail.com)
-
----
-
-## Current Goal
-
-Finish CS50, complete my Web Development learning path, build stronger real-world projects, and transition into a professional software development career.
+📧 Email
+[dev3mohamed@gmail.com](mailto:dev3mohamed@gmail.com)
 
 ---
 
-## Projects
+## Career Goal
 
-* timezone-clock-app
-* SecureTask Pro
-* PyScout
-* ChefConnect
-
+My goal is to transition into a professional software development role, contribute to impactful projects, and continuously grow as an engineer while combining software development, problem solving, and security-focused thinking.

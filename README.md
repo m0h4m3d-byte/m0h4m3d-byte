@@ -20,3 +20,8 @@ Aspiring Software Developer | CS50x Student | Web Development Learner
 Currently building my Computer Science foundation through Harvard CS50x while developing practical skills in Python, Web Development, Git, and GitHub.
 
 Interested in Software Development, Cybersecurity, AI, and solving real-world problems through technology.
+
+
+## 🤖 Robots Battle
+
+![Robots Battle](https://raw.githubusercontent.com/m0h4m3d-byte/m0h4m3d-byte/main/dist/robots-battle.svg)

@@ -1,8 +1,8 @@
-<p align="center">
-  <img src="./github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
-</p>
+<img src="./github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
+
 <img width="1166" height="184" alt="pacman-dark" src="https://github.com/user-attachments/assets/19dc5292-be46-4444-ae97-ce67dbfad229" />
 
+<img width="1166" height="259" alt="galaga" src="https://github.com/user-attachments/assets/5ddc9504-b4e3-45b8-95d9-d4a9f6412a06" /><p align="center">
 # Mohamed Gaber👋
 
 Aspiring Software Developer | CS50x Student | Web Development Learner

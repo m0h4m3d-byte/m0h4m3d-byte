@@ -4,8 +4,6 @@
 
 
 
-![snake gif](https://github.com/m0h4m3d-byte/m0h4m3d-byte/blob/output/snake.svg)
-
 
 
 # Mohamed Gaber👋

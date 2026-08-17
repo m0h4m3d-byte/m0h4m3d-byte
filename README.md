@@ -22,6 +22,6 @@ Currently building my Computer Science foundation through Harvard CS50x while de
 Interested in Software Development, Cybersecurity, AI, and solving real-world problems through technology.
 
 
-## 🤖 Robots Battle
+
 
 ![Robots Battle](https://raw.githubusercontent.com/m0h4m3d-byte/m0h4m3d-byte/main/dist/robots-battle.svg)

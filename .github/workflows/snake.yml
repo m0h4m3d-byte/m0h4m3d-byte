@@ -1,1 +1,23 @@
+name: Generate Snake
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # بيشتغل كل 6 ساعات
+  workflow_dispatch:       # عشان تقدر تشغله يدويًا
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Snakes
+        uses: Pro-Bandey/multi-style-snake-action@main
+        with:
+          github_user_name: ${{ github.repository_owner }}

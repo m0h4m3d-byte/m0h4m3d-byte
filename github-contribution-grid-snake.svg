@@ -1,5 +1,76 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%">
   <style>
+    @keyframes snakeMove {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(600px); }
+    }
+    @keyframes spiderMove1 {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      25% { transform: translate(20px, -15px) rotate(10deg); }
+      50% { transform: translate(-10px, 10px) rotate(-5deg); }
+      75% { transform: translate(15px, -5px) rotate(8deg); }
+      100% { transform: translate(0, 0) rotate(0deg); }
+    }
+    @keyframes spiderMove2 {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      30% { transform: translate(-15px, 20px) rotate(-8deg); }
+      60% { transform: translate(10px, -10px) rotate(5deg); }
+      100% { transform: translate(0, 0) rotate(0deg); }
+    }
+    @keyframes fireworkSpark {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(1.5); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    @keyframes fireworkBurst {
+      0% { transform: scale(0.5); opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { transform: scale(1.2); opacity: 0; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+    
+    .snake-body { 
+      animation: snakeMove 8s ease-in-out infinite alternate;
+    }
+    .spider-1 {
+      animation: spiderMove1 3s ease-in-out infinite;
+    }
+    .spider-2 {
+      animation: spiderMove2 4s ease-in-out infinite;
+    }
+    .spider-3 {
+      animation: spiderMove1 3.5s ease-in-out infinite reverse;
+    }
+    .firework-1 {
+      animation: fireworkBurst 2s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .firework-2 {
+      animation: fireworkBurst 2.5s ease-in-out infinite 0.5s;
+      transform-origin: center;
+    }
+    .firework-3 {
+      animation: fireworkBurst 3s ease-in-out infinite 1s;
+      transform-origin: center;
+    }
+    .firework-4 {
+      animation: fireworkBurst 2.2s ease-in-out infinite 1.5s;
+      transform-origin: center;
+    }
+    .spark {
+      animation: fireworkSpark 0.8s ease-in-out infinite alternate;
+    }
+    .spark-2 {
+      animation: fireworkSpark 1.2s ease-in-out infinite alternate-reverse;
+    }
+    .eye-blink {
+      animation: blink 3s ease-in-out infinite;
+    }
+    
     .snake { fill: #e63946; stroke: #b71c1c; stroke-width: 2; }
     .snake-eye { fill: white; stroke: #333; stroke-width: 1; }
     .snake-pupil { fill: #111; }
@@ -10,10 +81,10 @@
     .star { fill: #ffd93d; }
   </style>
 
-  <!-- خلفية داكنة شبيهة بـ GitHub -->
+  <!-- خلفية داكنة -->
   <rect width="800" height="200" fill="#0d1117" rx="10"/>
 
-  <!-- شبكة خلايا المساهمات (تزيينية) -->
+  <!-- شبكة خلايا GitHub المتلألئة -->
   <g opacity="0.15">
     <rect x="20" y="20" width="15" height="15" fill="#39d353"/>
     <rect x="40" y="20" width="15" height="15" fill="#39d353"/>
@@ -22,7 +93,6 @@
     <rect x="100" y="20" width="15" height="15" fill="#39d353"/>
     <rect x="120" y="20" width="15" height="15" fill="#39d353"/>
     <rect x="140" y="20" width="15" height="15" fill="#39d353"/>
-    <!-- المزيد من الخلايا بشكل عشوائي -->
     <rect x="200" y="40" width="15" height="15" fill="#39d353"/>
     <rect x="220" y="40" width="15" height="15" fill="#39d353"/>
     <rect x="260" y="40" width="15" height="15" fill="#39d353"/>
@@ -40,55 +110,55 @@
     <rect x="600" y="140" width="15" height="15" fill="#39d353"/>
   </g>
 
-  <!-- ===== الثعبان الأحمر ===== -->
-  <g transform="translate(50, 80)">
-    <!-- جسم الثعبان (منحنى متعرج) -->
-    <path d="M 0,0 
-             C 30,-20 60,20 90,0 
-             C 120,-20 150,20 180,0 
-             C 210,-20 240,20 270,0 
-             C 300,-20 330,20 360,0 
-             C 390,-20 420,20 450,0 
-             C 480,-20 510,20 540,0 
-             C 570,-20 600,20 630,0"
-          fill="none" stroke="#e63946" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
-    
-    <!-- تدرج داخلي (توهج) -->
-    <path d="M 0,0 
-             C 30,-20 60,20 90,0 
-             C 120,-20 150,20 180,0 
-             C 210,-20 240,20 270,0 
-             C 300,-20 330,20 360,0 
-             C 390,-20 420,20 450,0 
-             C 480,-20 510,20 540,0 
-             C 570,-20 600,20 630,0"
-          fill="none" stroke="#ff6b6b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <!-- ===== الثعبان المتحرك ===== -->
+  <g class="snake-body">
+    <g transform="translate(50, 80)">
+      <!-- جسم الثعبان -->
+      <path d="M 0,0 
+               C 30,-20 60,20 90,0 
+               C 120,-20 150,20 180,0 
+               C 210,-20 240,20 270,0 
+               C 300,-20 330,20 360,0 
+               C 390,-20 420,20 450,0 
+               C 480,-20 510,20 540,0 
+               C 570,-20 600,20 630,0"
+            fill="none" stroke="#e63946" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- توهج داخلي -->
+      <path d="M 0,0 
+               C 30,-20 60,20 90,0 
+               C 120,-20 150,20 180,0 
+               C 210,-20 240,20 270,0 
+               C 300,-20 330,20 360,0 
+               C 390,-20 420,20 450,0 
+               C 480,-20 510,20 540,0 
+               C 570,-20 600,20 630,0"
+            fill="none" stroke="#ff6b6b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
 
-    <!-- رأس الثعبان -->
-    <ellipse cx="-8" cy="0" rx="18" ry="14" fill="#e63946" stroke="#b71c1c" stroke-width="2"/>
-    <ellipse cx="-5" cy="-6" rx="6" ry="5" fill="white" stroke="#333" stroke-width="1"/> <!-- عين -->
-    <circle cx="-3" cy="-6" r="2.5" fill="#111"/> <!-- بؤبؤ -->
-    <ellipse cx="5" cy="-2" rx="3" ry="2" fill="#ff6b6b" opacity="0.5"/> <!-- لهفة -->
+      <!-- رأس الثعبان -->
+      <ellipse cx="-8" cy="0" rx="18" ry="14" fill="#e63946" stroke="#b71c1c" stroke-width="2"/>
+      <ellipse class="eye-blink" cx="-5" cy="-6" rx="6" ry="5" fill="white" stroke="#333" stroke-width="1"/>
+      <circle cx="-3" cy="-6" r="2.5" fill="#111"/>
+      <ellipse cx="5" cy="-2" rx="3" ry="2" fill="#ff6b6b" opacity="0.5"/>
 
-    <!-- ذيل الثعبان -->
-    <path d="M 630,0 C 645,-10 660,5 670,-2" fill="none" stroke="#e63946" stroke-width="12" stroke-linecap="round"/>
-    <path d="M 670,-2 C 678,-8 685,0 690,-4" fill="none" stroke="#ff6b6b" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+      <!-- ذيل الثعبان -->
+      <path d="M 630,0 C 645,-10 660,5 670,-2" fill="none" stroke="#e63946" stroke-width="12" stroke-linecap="round"/>
+      <path d="M 670,-2 C 678,-8 685,0 690,-4" fill="none" stroke="#ff6b6b" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+    </g>
   </g>
 
-  <!-- ===== عناكب صغيرة ===== -->
-  <!-- العنكبوت 1 (على يمين الثعبان) -->
-  <g transform="translate(680, 60)" class="spider">
+  <!-- ===== العناكب المتحركة ===== -->
+  <!-- عنكبوت 1 -->
+  <g class="spider-1" transform="translate(680, 60)">
     <circle cx="0" cy="0" r="6" fill="#2d2d2d"/>
-    <!-- أرجل -->
     <path d="M -4,-3 L -10,-8 M -4,-1 L -12,-3 M -4,1 L -10,5 M -4,3 L -12,8" class="spider-leg"/>
     <path d="M 4,-3 L 10,-8 M 4,-1 L 12,-3 M 4,1 L 10,5 M 4,3 L 12,8" class="spider-leg"/>
-    <!-- عيون -->
     <circle cx="-2" cy="-2" r="1.5" fill="red"/>
     <circle cx="2" cy="-2" r="1.5" fill="red"/>
   </g>
 
-  <!-- العنكبوت 2 (فوق الثعبان) -->
-  <g transform="translate(300, 30)" class="spider" transform-origin="300 30">
+  <!-- عنكبوت 2 -->
+  <g class="spider-2" transform="translate(300, 30)">
     <circle cx="0" cy="0" r="5" fill="#2d2d2d"/>
     <path d="M -3,-2 L -8,-6 M -3,0 L -10,-1 M -3,2 L -8,4 M -3,3 L -9,7" class="spider-leg"/>
     <path d="M 3,-2 L 8,-6 M 3,0 L 10,-1 M 3,2 L 8,4 M 3,3 L 9,7" class="spider-leg"/>
@@ -96,8 +166,8 @@
     <circle cx="1.5" cy="-1.5" r="1" fill="red"/>
   </g>
 
-  <!-- العنكبوت 3 (أسفل الثعبان) -->
-  <g transform="translate(150, 140)" class="spider">
+  <!-- عنكبوت 3 -->
+  <g class="spider-3" transform="translate(150, 140)">
     <circle cx="0" cy="0" r="4" fill="#2d2d2d"/>
     <path d="M -2,-2 L -6,-5 M -2,0 L -7,0 M -2,2 L -6,4 M -2,3 L -7,6" class="spider-leg"/>
     <path d="M 2,-2 L 6,-5 M 2,0 L 7,0 M 2,2 L 6,4 M 2,3 L 7,6" class="spider-leg"/>
@@ -105,58 +175,52 @@
     <circle cx="1" cy="-1" r="0.8" fill="red"/>
   </g>
 
-  <!-- ===== مفرقعات نارية (نجوم وشرارات) ===== -->
-  <!-- مفرقعة 1 (يسار) -->
-  <g transform="translate(80, 20)">
+  <!-- ===== المفرقعات النارية المتحركة ===== -->
+  <!-- مفرقعة 1 -->
+  <g class="firework-1" transform="translate(80, 20)">
     <circle cx="0" cy="0" r="3" class="star"/>
-    <circle cx="10" cy="-8" r="2" class="firework-spark"/>
-    <circle cx="-8" cy="-12" r="2" class="firework-spark"/>
-    <circle cx="5" cy="-18" r="1.5" class="firework-spark"/>
-    <circle cx="-5" cy="-22" r="1.5" class="firework-spark"/>
+    <circle class="spark" cx="10" cy="-8" r="2" class="firework-spark"/>
+    <circle class="spark-2" cx="-8" cy="-12" r="2" class="firework-spark"/>
+    <circle class="spark" cx="5" cy="-18" r="1.5" class="firework-spark"/>
+    <circle class="spark-2" cx="-5" cy="-22" r="1.5" class="firework-spark"/>
     <line x1="0" y1="0" x2="0" y2="-30" stroke="#ffd93d" stroke-width="1" opacity="0.6"/>
     <line x1="0" y1="0" x2="15" y2="-15" stroke="#ffd93d" stroke-width="1" opacity="0.6"/>
     <line x1="0" y1="0" x2="-15" y2="-15" stroke="#ffd93d" stroke-width="1" opacity="0.6"/>
   </g>
 
-  <!-- مفرقعة 2 (وسط) -->
-  <g transform="translate(400, 15)">
+  <!-- مفرقعة 2 -->
+  <g class="firework-2" transform="translate(400, 15)">
     <circle cx="0" cy="0" r="4" class="firework"/>
-    <circle cx="12" cy="-10" r="2.5" fill="#ff6b6b"/>
-    <circle cx="-12" cy="-10" r="2.5" fill="#ff6b6b"/>
-    <circle cx="8" cy="-20" r="2" fill="#ffd93d"/>
-    <circle cx="-8" cy="-20" r="2" fill="#ffd93d"/>
-    <circle cx="0" cy="-25" r="2" fill="#ff6b6b"/>
+    <circle class="spark" cx="12" cy="-10" r="2.5" fill="#ff6b6b"/>
+    <circle class="spark-2" cx="-12" cy="-10" r="2.5" fill="#ff6b6b"/>
+    <circle class="spark" cx="8" cy="-20" r="2" fill="#ffd93d"/>
+    <circle class="spark-2" cx="-8" cy="-20" r="2" fill="#ffd93d"/>
+    <circle class="spark" cx="0" cy="-25" r="2" fill="#ff6b6b"/>
     <line x1="0" y1="0" x2="0" y2="-35" stroke="#ffd93d" stroke-width="1.5" opacity="0.5"/>
     <line x1="0" y1="0" x2="20" y2="-20" stroke="#ffd93d" stroke-width="1.5" opacity="0.5"/>
     <line x1="0" y1="0" x2="-20" y2="-20" stroke="#ffd93d" stroke-width="1.5" opacity="0.5"/>
-    <line x1="0" y1="0" x2="15" y2="-30" stroke="#ff6b6b" stroke-width="1" opacity="0.4"/>
-    <line x1="0" y1="0" x2="-15" y2="-30" stroke="#ff6b6b" stroke-width="1" opacity="0.4"/>
   </g>
 
-  <!-- مفرقعة 3 (يمين) -->
-  <g transform="translate(700, 30)">
+  <!-- مفرقعة 3 -->
+  <g class="firework-3" transform="translate(700, 30)">
     <circle cx="0" cy="0" r="3" class="star"/>
-    <circle cx="10" cy="-5" r="2" fill="#ff6b6b"/>
-    <circle cx="-6" cy="-10" r="2" fill="#ffd93d"/>
-    <circle cx="4" cy="-16" r="1.5" fill="#ff6b6b"/>
-    <circle cx="-8" cy="-18" r="1.5" fill="#ffd93d"/>
-    <line x1="0" y1="0" x2="12" y2="-20" stroke="#ffd93d" stroke-width="1" opacity="0.5"/>
-    <line x1="0" y1="0" x2="-10" y2="-22" stroke="#ffd93d" stroke-width="1" opacity="0.5"/>
+    <circle class="spark" cx="10" cy="-5" r="2" fill="#ff6b6b"/>
+    <circle class="spark-2" cx="-6" cy="-10" r="2" fill="#ffd93d"/>
+    <circle class="spark" cx="4" cy="-16" r="1.5" fill="#ff6b6b"/>
+    <circle class="spark-2" cx="-8" cy="-18" r="1.5" fill="#ffd93d"/>
   </g>
 
-  <!-- مفرقعة 4 (أسفل) -->
-  <g transform="translate(550, 160)">
+  <!-- مفرقعة 4 -->
+  <g class="firework-4" transform="translate(550, 160)">
     <circle cx="0" cy="0" r="2.5" class="firework"/>
-    <circle cx="8" cy="-6" r="1.5" fill="#ff6b6b"/>
-    <circle cx="-6" cy="-8" r="1.5" fill="#ffd93d"/>
-    <circle cx="3" cy="-14" r="1.5" fill="#ff6b6b"/>
-    <circle cx="0" cy="-18" r="1" fill="#ffd93d"/>
+    <circle class="spark" cx="8" cy="-6" r="1.5" fill="#ff6b6b"/>
+    <circle class="spark-2" cx="-6" cy="-8" r="1.5" fill="#ffd93d"/>
+    <circle class="spark" cx="3" cy="-14" r="1.5" fill="#ff6b6b"/>
   </g>
 
-  <!-- شراريت صغيرة متناثرة -->
-  <circle cx="200" cy="170" r="1.5" fill="#ffd93d" opacity="0.7"/>
-  <circle cx="350" cy="180" r="1" fill="#ff6b6b" opacity="0.8"/>
-  <circle cx="500" cy="175" r="1.5" fill="#ffd93d" opacity="0.6"/>
-  <circle cx="650" cy="170" r="1" fill="#ff6b6b" opacity="0.7"/>
-  <circle cx="750" cy="160" r="1.5" fill="#ffd93d" opacity="0.5"/>
+  <!-- شرارات صغيرة -->
+  <circle class="spark" cx="200" cy="170" r="1.5" fill="#ffd93d" opacity="0.7"/>
+  <circle class="spark-2" cx="350" cy="180" r="1" fill="#ff6b6b" opacity="0.8"/>
+  <circle class="spark" cx="500" cy="175" r="1.5" fill="#ffd93d" opacity="0.6"/>
+  <circle class="spark-2" cx="650" cy="170" r="1" fill="#ff6b6b" opacity="0.7"/>
 </svg>

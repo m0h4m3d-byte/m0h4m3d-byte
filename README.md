@@ -4,9 +4,10 @@
 </p>
 
 <img width="1166" height="184" alt="pacman-dark" src="https://github.com/user-attachments/assets/19dc5292-be46-4444-ae97-ce67dbfad229" />
--->
 
 <img width="1166" height="259" alt="galaga" src="https://github.com/user-attachments/assets/5ddc9504-b4e3-45b8-95d9-d4a9f6412a06" /><p align="center">
+-->
+<img width="1166" height="169" alt="bomberman-dark" src="https://github.com/user-attachments/assets/4771e64c-b60f-4e86-99d1-f392222a7b87" />
 # Mohamed Gaber👋
 
 Aspiring Software Developer | CS50x Student | Web Development Learner
@@ -22,3 +23,6 @@ Aspiring Software Developer | CS50x Student | Web Development Learner
 Currently building my Computer Science foundation through Harvard CS50x while developing practical skills in Python, Web Development, Git, and GitHub.
 
 Interested in Software Development, Cybersecurity, AI, and solving real-world problems through technology.
+
+
+   

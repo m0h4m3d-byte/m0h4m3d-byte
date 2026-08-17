@@ -1,4 +1,4 @@
-<img src="./github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
+<img width="1166" height="184" src="./github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
 
 <img width="1166" height="184" alt="pacman-dark" src="https://github.com/user-attachments/assets/19dc5292-be46-4444-ae97-ce67dbfad229" />
 

@@ -7,8 +7,8 @@ permissions:
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # بيشتغل كل 6 ساعات
-  workflow_dispatch:       # عشان تقدر تشغله يدويًا
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,7 +17,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate Snakes
-        uses: Pro-Bandey/multi-style-snake-action@main
+      - name: Generate the snake
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push the snake to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

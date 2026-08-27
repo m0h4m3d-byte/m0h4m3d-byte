@@ -39,3 +39,7 @@ Interested in Software Development, Cybersecurity, AI, and solving real-world pr
   </a>
 </div>
 
+
+
+<img width="880" height="192" alt="github-snake-dracula-stars" src="https://github.com/user-attachments/assets/2d23b310-1727-4343-89b2-b6be5bd54218" />
+

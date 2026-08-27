@@ -27,3 +27,15 @@ Currently building my Computer Science foundation through Harvard CS50x while de
 Interested in Software Development, Cybersecurity, AI, and solving real-world problems through technology.
 #CS50 #KAGGLE #SKILLBUILD
 
+
+
+
+<div align="center">
+  <a href="https://commit-history.com/m0h4m3d-byte">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://commit-history.com/embed/m0h4m3d-byte?theme=dark" />
+      <img alt="m0h4m3d-byte's commit history" src="https://commit-history.com/embed/m0h4m3d-byte" />
+    </picture>
+  </a>
+</div>
+

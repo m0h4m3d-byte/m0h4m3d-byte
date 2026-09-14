@@ -20,7 +20,7 @@ Aspiring Software Developer | CS50x Student | Web Development Learner
 
 💼 LinkedIn: https://www.linkedin.com/in/muhammad-g-shaheen/
 
-🚀 Kaggle: https://www.kaggle.com/M0h4m3d-Byte
+🚀 Kaggle: M0h4m3d-Byte
 
 📧 [dev3mohamed@gmail.com](mailto:dev3mohamed@gmail.com)
 

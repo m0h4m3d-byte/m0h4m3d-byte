@@ -20,6 +20,8 @@ Aspiring Software Developer | CS50x Student | Web Development Learner
 
 💼 LinkedIn: https://www.linkedin.com/in/muhammad-g-shaheen/
 
+🚀 Kaggle: https://www.kaggle.com/dev3mohamed
+
 📧 [dev3mohamed@gmail.com](mailto:dev3mohamed@gmail.com)
 
 Currently building my Computer Science foundation through Harvard CS50x while developing practical skills in Python, Web Development, Git, and GitHub.

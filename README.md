@@ -1,11 +1,11 @@
-<p align="center">
+<!-- <p align="center">
   <img src="./github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
 </p>
 
 <img width="1166" height="184" alt="pacman-dark" src="https://github.com/user-attachments/assets/19dc5292-be46-4444-ae97-ce67dbfad229" />
 
-<img width="1166" height="259" alt="galaga" src="https://github.com/user-attachments/assets/5ddc9504-b4e3-45b8-95d9-d4a9f6412a06" /><p align="center">
--->
+<img width="1166" height="259" alt="galaga" src="https://github.com/user-attachments/assets/5ddc9504-b4e3-45b8-95d9-d4a9f6412a06" /><p align="center"> -->
+
 <img width="1166" height="100" alt="gemini-svg (1)" src="https://github.com/user-attachments/assets/5f34d9b9-913f-4ba4-b346-7941ff20fc18" />
 
 <img width="1166" height="169" alt="bomberman-dark" src="https://github.com/user-attachments/assets/4771e64c-b60f-4e86-99d1-f392222a7b87" />
